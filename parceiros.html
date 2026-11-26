@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Parceiros · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="parceiros"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Parceiros do evento</div><div class="page-sub">Quanto cada ponto vendeu, quanto fica com você e quanto vai para cada parceiro</div></div>
+    <div style="display:flex;gap:10px"><button class="btn" data-acao="breve"><i data-i="mais"></i>Novo parceiro</button><button class="btn primary" data-acao="enviar-todos"><i data-i="enviar"></i>Enviar extratos</button></div>
+  </div>
+
+  <div class="row">
+    <div class="card kpi hl"><div class="kpi-label">Você recebe</div><div class="kpi-val num">R$ 58.848</div><div class="kpi-foot">Bar + comissões dos parceiros</div></div>
+    <div class="card kpi"><div class="kpi-label">Repasse aos parceiros</div><div class="kpi-val num">R$ 25.472</div><div class="kpi-foot">2 parceiros neste evento</div></div>
+    <div class="card kpi"><div class="kpi-label">Comissões recebidas</div><div class="kpi-val num">R$ 6.368</div><div class="kpi-foot">20% sobre o que os parceiros venderam</div></div>
+    <div class="card kpi"><div class="kpi-label">Extratos</div><div class="kpi-val num" data-extratos>1 de 2</div><div class="kpi-foot">enviados por link</div></div>
+  </div>
+
+  <div class="card" style="padding-bottom:8px">
+    <div class="card-title">Conta por ponto de venda</div>
+    <table>
+      <tr><th>Ponto</th><th>Dono</th><th>Regra</th><th class="r">Vendeu</th><th class="r">Você recebe</th><th class="r">Repasse</th><th class="r">Extrato</th></tr>
+      <tr><td><span class="dot" style="background:#F2A23A"></span><span class="pt-name">Bar</span></td><td>Próprio</td><td class="muted">Sem comissão</td><td class="r">R$ 52.480</td><td class="r">R$ 52.480</td><td class="r">R$ 0</td><td class="r"><span class="chip grey">Não se aplica</span></td></tr>
+      <tr><td><span class="dot" style="background:#94530A"></span><span class="pt-name">Hambúrguer</span></td><td>Parceiro</td><td>20% sobre o bruto</td><td class="r">R$ 18.900</td><td class="r">R$ 3.780</td><td class="r"><b>R$ 15.120</b></td><td class="r"><span class="chip ok">Enviado 01:20</span></td></tr>
+      <tr><td><span class="dot" style="background:#5E6573"></span><span class="pt-name">Espetinho</span></td><td>Parceiro</td><td>20% sobre o bruto</td><td class="r">R$ 12.940</td><td class="r">R$ 2.588</td><td class="r"><b>R$ 10.352</b></td><td class="r"><button class="btn sm" data-acao="enviar-link"><i data-i="link"></i>Enviar link</button></td></tr>
+      <tr class="total"><td>Total do evento</td><td></td><td></td><td class="r">R$ 84.320</td><td class="r">R$ 58.848</td><td class="r">R$ 25.472</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:1">
+      <div class="card-title">Regras combinadas</div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span><b>Hambúrguer</b><br><span class="muted" style="font-size:13px">Usa a maquininha do Tauil · repasse em até 2 dias</span></span><span class="chip warn">20% do bruto</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:12px"><span><b>Espetinho</b><br><span class="muted" style="font-size:13px">Usa a maquininha do Tauil · repasse em até 2 dias</span></span><span class="chip warn">20% do bruto</span></div>
+      </div>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title">Extrato que o parceiro recebe</div>
+      <div style="border:1px dashed var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;justify-content:space-between"><b>Hambúrguer · Evento de 22/11</b><span class="chip ok">Conferido</span></div>
+        <div style="display:flex;justify-content:space-between" class="num"><span class="muted">Vendas</span><span>R$ 18.900</span></div>
+        <div style="display:flex;justify-content:space-between" class="num"><span class="muted">Comissão (20%)</span><span>−R$ 3.780</span></div>
+        <div style="display:flex;justify-content:space-between;font-weight:700" class="num"><span>Você recebe</span><span>R$ 15.120</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>

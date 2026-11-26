@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Fechamento · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="fechamento"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Fechamento do Bar</div><div class="page-sub">Cada maquininha conferida: o que deveria ter entrado e o que entrou de fato</div></div>
+    <div style="display:flex;gap:10px"><a class="btn" href="relatorio.html"><i data-i="relatorios"></i>Ver relatório</a><button class="btn primary" data-acao="aprovar"><i data-i="check"></i>Aprovar fechamento</button></div>
+  </div>
+
+  <div style="display:flex;gap:8px">
+    <span class="btn dark sm">Bar</span><button class="btn sm" data-acao="breve">Hambúrguer</button><button class="btn sm" data-acao="breve">Espetinho</button>
+  </div>
+
+  <div class="row">
+    <div class="card kpi"><div class="kpi-label">Esperado</div><div class="kpi-val num">R$ 52.480</div><div class="kpi-foot">vendas × preço do cardápio</div></div>
+    <div class="card kpi"><div class="kpi-label">Recebido</div><div class="kpi-val num">R$ 52.430</div><div class="kpi-foot">soma das 3 maquininhas</div></div>
+    <div class="card kpi"><div class="kpi-label">Diferença</div><div class="kpi-val num" style="color:var(--neg)">−R$ 50</div><div class="kpi-foot"><span class="up">Explicada</span> · estorno</div></div>
+    <div class="card kpi hl"><div class="kpi-label">Líquido após taxas</div><div class="kpi-val num">R$ 51.487</div><div class="kpi-foot">taxas das maquininhas: R$ 943</div></div>
+  </div>
+
+  <div class="card" style="padding-bottom:8px">
+    <div class="card-title">Maquininhas</div>
+    <table>
+      <tr><th>Maquininha</th><th>Operador</th><th class="r">Esperado</th><th class="r">Recebido</th><th class="r">Diferença</th><th>Situação</th></tr>
+      <tr><td class="pt-name">Maquininha 1</td><td>Caixa 1</td><td class="r">R$ 18.200</td><td class="r">R$ 18.200</td><td class="r">R$ 0</td><td><span class="chip ok">Conferida</span></td></tr>
+      <tr><td class="pt-name">Maquininha 2</td><td>Caixa 2</td><td class="r">R$ 17.640</td><td class="r">R$ 17.590</td><td class="r" style="color:var(--neg);font-weight:700">−R$ 50</td><td><span class="chip warn">Diferença explicada</span></td></tr>
+      <tr><td class="pt-name">Maquininha 3</td><td>Caixa 3</td><td class="r">R$ 16.640</td><td class="r">R$ 16.640</td><td class="r">R$ 0</td><td><span class="chip ok">Conferida</span></td></tr>
+      <tr class="total"><td>Total do Bar</td><td></td><td class="r">R$ 52.480</td><td class="r">R$ 52.430</td><td class="r">−R$ 50</td><td></td></tr>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:1.3">
+      <div class="card-title">Diferença registrada <span class="chip warn">1 de 1 explicada</span></div>
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div style="width:40px;height:40px;border-radius:10px;background:var(--amber-soft);color:var(--amber-deep);display:flex;align-items:center;justify-content:center"><i data-i="alerta"></i></div>
+        <div style="flex:1"><b>Maquininha 2 · −R$ 50</b><div class="muted" style="margin-top:3px">Estorno de 5 cervejas cobradas em dobro. Registrado pelo Caixa 2 às 23:41, com o comprovante do estorno.</div></div>
+      </div>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title">Etapas do fechamento</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;gap:10px;align-items:center"><span class="chip ok"><i data-i="check"></i></span>Vendas importadas das maquininhas</div>
+        <div style="display:flex;gap:10px;align-items:center"><span class="chip ok"><i data-i="check"></i></span>Diferenças explicadas</div>
+        <div style="display:flex;gap:10px;align-items:center"><span class="chip grey" data-aprovacao><i data-i="relogio"></i></span>Aprovação do fechamento</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>

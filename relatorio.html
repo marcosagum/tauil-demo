@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Relatório do evento · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="relatorios"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Relatório do evento</div><div class="page-sub">Evento de exemplo · Sábado, 22/11 · pronto às 02:14, logo depois do fechamento</div></div>
+    <div style="display:flex;gap:10px" class="no-print"><button class="btn" data-acao="aviso" data-msg="Link do relatório copiado."><i data-i="link"></i>Copiar link</button><button class="btn" data-acao="aviso" data-msg="Relatório pronto para mandar no WhatsApp."><i data-i="compartilhar"></i>WhatsApp</button><button class="btn primary" data-acao="imprimir"><i data-i="baixar"></i>Baixar PDF</button></div>
+  </div>
+
+  <div class="row">
+    <div class="card kpi hl"><div class="kpi-label">Faturamento</div><div class="kpi-val num">R$ 84.320</div><div class="kpi-foot">+8% sobre o último evento</div></div>
+    <div class="card kpi"><div class="kpi-label">Fica com você</div><div class="kpi-val num">R$ 58.848</div><div class="kpi-foot">Bar + comissões dos parceiros</div></div>
+    <div class="card kpi"><div class="kpi-label">Repasse aos parceiros</div><div class="kpi-val num">R$ 25.472</div><div class="kpi-foot">extratos enviados por link</div></div>
+    <div class="card kpi"><div class="kpi-label">Gasto por pessoa</div><div class="kpi-val num">R$ 13,60</div><div class="kpi-foot">6.200 pessoas · ticket médio R$ 17,39</div></div>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:1.4;padding-bottom:8px">
+      <div class="card-title">Resultado por ponto de venda</div>
+      <table>
+        <tr><th>Ponto</th><th class="r">Vendeu</th><th class="r">Fica com você</th><th class="r">Repasse</th></tr>
+        <tr><td class="pt-name">Bar (próprio)</td><td class="r">R$ 52.480</td><td class="r">R$ 52.480</td><td class="r">R$ 0</td></tr>
+        <tr><td class="pt-name">Hambúrguer (parceiro, 20%)</td><td class="r">R$ 18.900</td><td class="r">R$ 3.780</td><td class="r">R$ 15.120</td></tr>
+        <tr><td class="pt-name">Espetinho (parceiro, 20%)</td><td class="r">R$ 12.940</td><td class="r">R$ 2.588</td><td class="r">R$ 10.352</td></tr>
+        <tr class="total"><td>Total</td><td class="r">R$ 84.320</td><td class="r">R$ 58.848</td><td class="r">R$ 25.472</td></tr>
+      </table>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title">Contas da noite</div>
+      <div class="mini-row" style="border-top:none"><span>Retirada da produção a cobrar</span><b class="num" data-ret="total">R$ 1.268</b></div>
+      <div class="mini-row"><span class="muted">Para a produção</span><span class="num" data-ret="producao">R$ 740</span></div>
+      <div class="mini-row"><span class="muted">Para o artístico</span><span class="num" data-ret="artistico">R$ 528</span></div>
+      <div class="mini-row"><span>Pagamento da equipe (18 pessoas)</span><b class="num">R$ 3.200</b></div>
+      <div class="mini-row"><span>Taxas das maquininhas (Bar)</span><b class="num">R$ 943</b></div>
+      <div class="mini-row"><span>Diferença de caixa</span><span><b class="num">−R$ 50</b> <span class="chip ok" style="margin-left:6px">Explicada</span></span></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:1">
+      <div class="card-title">O que vendeu mais</div>
+      <div class="mini-row" style="border-top:none"><span><b>Cerveja lata</b> · Bar</span><span class="num">2.140 · R$ 21.400</span></div>
+      <div class="mini-row"><span><b>Hambúrguer artesanal</b> · Hambúrguer</span><span class="num">540 · R$ 17.280</span></div>
+      <div class="mini-row"><span><b>Drink da casa</b> · Bar</span><span class="num">610 · R$ 15.250</span></div>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title">Para o próximo evento</div>
+      <div class="mini-row" style="border-top:none"><span>Pico de vendas</span><b>22h · R$ 16.900 em uma hora</b></div>
+      <div class="mini-row"><span>Sugestão de cerveja lata</span><b>2.350 unidades (+10%)</b></div>
+      <div class="mini-row"><span>Reforço de equipe</span><b>das 21h às 23h</b></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>

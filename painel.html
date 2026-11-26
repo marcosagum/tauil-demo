@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Painel · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="painel"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Painel do evento</div><div class="page-sub">Sábado, 22/11 · das 18h às 2h · atualizado há 1 minuto</div></div>
+    <div style="display:flex;gap:10px"><button class="btn" data-acao="aviso" data-msg="Resumo do evento pronto para mandar no WhatsApp."><i data-i="compartilhar"></i>Compartilhar</button><a class="btn dark" href="relatorio.html"><i data-i="relatorios"></i>Relatório</a></div>
+  </div>
+
+  <div class="row">
+    <div class="card kpi hl"><div class="kpi-label">Faturamento</div><div class="kpi-val num">R$ 84.320</div><div class="kpi-foot"><span style="color:#8FD3A8;font-weight:700">+8%</span> sobre o último evento</div></div>
+    <div class="card kpi"><div class="kpi-label">Público</div><div class="kpi-val num">6.200</div><div class="kpi-foot">pessoas no evento</div></div>
+    <div class="card kpi"><div class="kpi-label">Ticket médio</div><div class="kpi-val num">R$ 17,39</div><div class="kpi-foot">4.850 vendas</div></div>
+    <div class="card kpi"><div class="kpi-label">Gasto por pessoa</div><div class="kpi-val num">R$ 13,60</div><div class="kpi-foot"><span class="up">+R$ 0,90</span> sobre o último</div></div>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:2">
+      <div class="card-title">Vendas por hora <span class="chip warn">Pico às 22h · R$ 16.900</span></div>
+      <svg width="800" height="210" viewBox="0 -12 800 212" style="display:block">
+        <g font-family="DM Sans, Arial" font-size="13" font-weight="700" fill="#5E6573" text-anchor="middle">
+          <rect x="22" y="154" width="56" height="46" rx="7" fill="#E2DBCB"/><text x="50" y="146">4,1 mil</text>
+          <rect x="122" y="112" width="56" height="88" rx="7" fill="#E2DBCB"/><text x="150" y="104">7,8 mil</text>
+          <rect x="222" y="74" width="56" height="126" rx="7" fill="#E2DBCB"/><text x="250" y="66">11,2 mil</text>
+          <rect x="322" y="36" width="56" height="164" rx="7" fill="#E2DBCB"/><text x="350" y="28">14,6 mil</text>
+          <rect x="422" y="10" width="56" height="190" rx="7" fill="#F2A23A"/><text x="450" y="5" fill="#94530A">16,9 mil</text>
+          <rect x="522" y="49" width="56" height="151" rx="7" fill="#E2DBCB"/><text x="550" y="41">13,4 mil</text>
+          <rect x="622" y="90" width="56" height="110" rx="7" fill="#E2DBCB"/><text x="650" y="82">9,8 mil</text>
+          <rect x="722" y="127" width="56" height="73" rx="7" fill="#E2DBCB"/><text x="750" y="119">6,5 mil</text>
+        </g>
+      </svg>
+      <div style="display:flex;width:800px;margin-top:8px" class="muted"><span style="width:100px;text-align:center">18h</span><span style="width:100px;text-align:center">19h</span><span style="width:100px;text-align:center">20h</span><span style="width:100px;text-align:center">21h</span><span style="width:100px;text-align:center">22h</span><span style="width:100px;text-align:center">23h</span><span style="width:100px;text-align:center">0h</span><span style="width:100px;text-align:center">1h</span></div>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title">Por ponto de venda</div>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div><div style="display:flex;justify-content:space-between"><span class="pt-name">Bar</span><span class="num">R$ 52.480 · 62%</span></div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="muted" style="font-size:13px;margin-top:6px">Próprio · 3 maquininhas</div></div>
+        <div><div style="display:flex;justify-content:space-between"><span class="pt-name">Hambúrguer</span><span class="num">R$ 18.900 · 22%</span></div><div class="bar-track"><div class="bar-fill" style="width:36%"></div></div><div class="muted" style="font-size:13px;margin-top:6px">Parceiro · comissão de 20%</div></div>
+        <div><div style="display:flex;justify-content:space-between"><span class="pt-name">Espetinho</span><span class="num">R$ 12.940 · 15%</span></div><div class="bar-track"><div class="bar-fill" style="width:25%"></div></div><div class="muted" style="font-size:13px;margin-top:6px">Parceiro · comissão de 20%</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card" style="flex:2;padding-bottom:10px">
+      <div class="card-title">Produtos mais vendidos</div>
+      <table>
+        <tr><th>Produto</th><th>Ponto</th><th class="r">Quantidade</th><th class="r">Total</th></tr>
+        <tr><td class="pt-name">Cerveja lata</td><td>Bar</td><td class="r">2.140</td><td class="r">R$ 21.400</td></tr>
+        <tr><td class="pt-name">Hambúrguer artesanal</td><td>Hambúrguer</td><td class="r">540</td><td class="r">R$ 17.280</td></tr>
+        <tr><td class="pt-name">Drink da casa</td><td>Bar</td><td class="r">610</td><td class="r">R$ 15.250</td></tr>
+        <tr><td class="pt-name">Espetinho de carne</td><td>Espetinho</td><td class="r">860</td><td class="r">R$ 10.320</td></tr>
+        <tr><td class="pt-name">Água 500 ml</td><td>Bar</td><td class="r">1.120</td><td class="r">R$ 5.600</td></tr>
+      </table>
+    </div>
+    <div class="card" style="flex:1">
+      <div class="card-title"><a href="retirada.html">Retirada da produção</a> <span class="chip ok" data-ret="chip">Dentro do limite</span></div>
+      <div class="kpi-val num" style="font-size:30px" data-ret="total">R$ 1.268</div>
+      <div class="muted" style="margin-top:2px">de R$ 3.000 combinados · <span data-ret="pct">42%</span></div>
+      <div class="bar-track"><div class="bar-fill" style="width:42%" data-ret="barra"></div></div>
+      <div style="margin-top:14px" data-ret="lista" data-modo="mini"></div>
+      <a href="retirada.html" class="muted no-print" style="display:block;margin-top:8px;font-size:13px;font-weight:700">Ver todas as retiradas</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>

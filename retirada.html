@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Retirada da produção · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="retirada"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Retirada da produção</div><div class="page-sub">Tudo o que a produção e o artístico tiraram do bar, com quem, o quê e quanto</div></div>
+    <div style="display:flex;gap:10px"><button class="btn" data-acao="aviso" data-msg="Extrato enviado para a produção por link."><i data-i="enviar"></i>Enviar extrato</button><button class="btn primary" data-acao="nova-retirada"><i data-i="mais"></i>Nova retirada</button></div>
+  </div>
+
+  <div class="row">
+    <div class="card kpi hl"><div class="kpi-label">Retirado até agora</div><div class="kpi-val num" data-ret="total">R$ 1.268</div><div class="kpi-foot"><span data-ret="qtd">5</span> retiradas registradas</div></div>
+    <div class="card kpi"><div class="kpi-label">Limite combinado</div><div class="kpi-val num">R$ 3.000</div><div class="bar-track"><div class="bar-fill" style="width:42%" data-ret="barra"></div></div><div class="kpi-foot"><span data-ret="pct">42%</span> usado · <span class="chip ok" data-ret="chip" style="padding:2px 8px">Dentro do limite</span></div></div>
+    <div class="card kpi"><div class="kpi-label">Para a produção</div><div class="kpi-val num" data-ret="producao">R$ 740</div><div class="kpi-foot">equipe, palco e técnica</div></div>
+    <div class="card kpi"><div class="kpi-label">Para o artístico</div><div class="kpi-val num" data-ret="artistico">R$ 528</div><div class="kpi-foot">camarins</div></div>
+  </div>
+
+  <div class="card" style="padding-bottom:8px">
+    <div class="card-title">Extrato da retirada <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:500">Mais recente primeiro</span></div>
+    <table>
+      <thead><tr><th>Hora</th><th>Item</th><th class="r">Quantidade</th><th>Para</th><th>Quem retirou</th><th class="r">Preço</th><th class="r">Valor</th></tr></thead>
+      <tbody data-ret="lista" data-modo="tabela"></tbody>
+    </table>
+  </div>
+  <p class="muted" style="font-size:13px">Experimente: clique em <b>Nova retirada</b>. O total muda aqui, no painel e no celular.</p>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>

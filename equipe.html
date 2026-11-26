@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><title>Equipe · Tauil System</title><link rel="stylesheet" href="app.css"></head>
+<body>
+<div class="app">
+<aside id="side" data-on="equipe"></aside>
+<div class="main">
+<header id="top"></header>
+<div class="content">
+  <div class="page-head">
+    <div><div class="page-title">Equipe do evento</div><div class="page-sub">18 pessoas · diária, hora extra e consumo já calculados</div></div>
+    <div style="display:flex;gap:10px"><button class="btn" data-acao="breve"><i data-i="mais"></i>Adicionar pessoa</button><button class="btn primary" data-acao="aviso" data-msg="Lista de Pix gerada: 17 pessoas prontas, 1 sem chave Pix."><i data-i="enviar"></i>Gerar lista de Pix</button></div>
+  </div>
+
+  <div class="row">
+    <div class="card kpi"><div class="kpi-label">Diárias</div><div class="kpi-val num">R$ 2.920</div><div class="kpi-foot">8 bartenders · 4 caixas · 6 barbacks</div></div>
+    <div class="card kpi"><div class="kpi-label">Horas extras</div><div class="kpi-val num">R$ 400</div><div class="kpi-foot">16 horas no total</div></div>
+    <div class="card kpi"><div class="kpi-label">Consumo descontado</div><div class="kpi-val num" style="color:var(--neg)">−R$ 120</div><div class="kpi-foot">registrado no bar durante o evento</div></div>
+    <div class="card kpi hl"><div class="kpi-label">Total a pagar</div><div class="kpi-val num">R$ 3.200</div><div class="kpi-foot">pronto para pagar por Pix</div></div>
+  </div>
+
+  <div class="card" style="padding-bottom:6px">
+    <div class="card-title">Pessoas <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:500">Mostrando 8 de 18</span></div>
+    <table>
+      <tr><th>Nome</th><th>Função</th><th class="r">Diária</th><th class="r">Hora extra</th><th class="r">Consumo</th><th class="r">A pagar</th><th>Pix</th></tr>
+      <tr><td class="pt-name">Ana Souza</td><td>Bartender</td><td class="r">R$ 180</td><td class="r">R$ 50</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 220</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Bruno Lima</td><td>Bartender</td><td class="r">R$ 180</td><td class="r">R$ 50</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 220</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Carla Mendes</td><td>Bartender</td><td class="r">R$ 180</td><td class="r">R$ 50</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 220</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Diego Rocha</td><td>Bartender</td><td class="r">R$ 180</td><td class="r">R$ 50</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 220</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Elisa Prado</td><td>Caixa</td><td class="r">R$ 160</td><td class="r">R$ 0</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 150</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Felipe Nunes</td><td>Caixa</td><td class="r">R$ 160</td><td class="r">R$ 0</td><td class="r" style="color:var(--neg)">−R$ 10</td><td class="r"><b>R$ 150</b></td><td><span class="chip warn">Falta a chave</span></td></tr>
+      <tr><td class="pt-name">Gabriel Torres</td><td>Barback</td><td class="r">R$ 140</td><td class="r">R$ 0</td><td class="r">R$ 0</td><td class="r"><b>R$ 140</b></td><td><span class="chip ok">Pronto</span></td></tr>
+      <tr><td class="pt-name">Helena Dias</td><td>Barback</td><td class="r">R$ 140</td><td class="r">R$ 0</td><td class="r">R$ 0</td><td class="r"><b>R$ 140</b></td><td><span class="chip ok">Pronto</span></td></tr>
+    </table>
+  </div>
+</div>
+</div>
+</div>
+<script src="ui.js"></script>
+<script src="demo.js"></script>
+</body></html>
